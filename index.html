@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SO MECHANIC - Garage Automobile à Cornebarrieu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .hero-gradient {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+        }
+
+        .service-card {
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(59, 130, 246, 0.3);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(59, 130, 246, 0.4);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-900 text-gray-100">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-gray-900/95 backdrop-blur-sm z-50 border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center space-x-3">
+                    <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center">
+                        <i class="fas fa-wrench text-white text-xl"></i>
+                    </div>
+                    <span class="text-2xl font-bold text-white">SO MECHANIC</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#accueil" class="text-gray-300 hover:text-blue-400 transition">Accueil</a>
+                    <a href="#services" class="text-gray-300 hover:text-blue-400 transition">Services</a>
+                    <a href="#tarifs" class="text-gray-300 hover:text-blue-400 transition">Tarifs</a>
+                    <a href="#contact" class="text-gray-300 hover:text-blue-400 transition">Contact</a>
+                </div>
+                <a href="tel:0621977782" class="btn-primary text-white px-6 py-3 rounded-lg font-semibold">
+                    <i class="fas fa-phone mr-2"></i>Appelez-nous
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero-gradient pt-32 pb-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div
+                        class="inline-block bg-blue-600/20 text-blue-400 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+                        <i class="fas fa-map-marker-alt mr-2"></i>Nouveau à Cornebarrieu !
+                    </div>
+                    <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+                        Votre garage de <span class="text-blue-400">confiance</span>
+                    </h1>
+                    <p class="text-xl text-gray-400 mb-8">
+                        Mécanique générale, entretien et diagnostic automobile.
+                        Des professionnels à votre service depuis maintenant.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#contact"
+                            class="btn-primary text-white px-8 py-4 rounded-lg font-semibold text-center">
+                            Prendre rendez-vous
+                        </a>
+                        <a href="tel:0621977782"
+                            class="bg-gray-800 hover:bg-gray-700 text-white px-8 py-4 rounded-lg font-semibold text-center transition">
+                            06 21 97 77 82
+                        </a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div
+                        class="bg-gradient-to-br from-blue-600/20 to-purple-600/20 rounded-3xl p-8 backdrop-blur-sm border border-gray-700">
+                        <div class="space-y-6">
+                            <div class="flex items-center space-x-4 bg-gray-800/50 p-4 rounded-xl">
+                                <i class="fas fa-clock text-blue-400 text-2xl"></i>
+                                <div>
+                                    <p class="text-sm text-gray-400">Horaires</p>
+                                    <p class="font-semibold">9h30 - 18h30</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-4 bg-gray-800/50 p-4 rounded-xl">
+                                <i class="fas fa-map-marker-alt text-blue-400 text-2xl"></i>
+                                <div>
+                                    <p class="text-sm text-gray-400">Adresse</p>
+                                    <p class="font-semibold">45 bis route d'Aussonne</p>
+                                    <p class="text-sm text-gray-400">Cornebarrieu</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-4 bg-gray-800/50 p-4 rounded-xl">
+                                <i class="fas fa-envelope text-blue-400 text-2xl"></i>
+                                <div>
+                                    <p class="text-sm text-gray-400">Email</p>
+                                    <p class="font-semibold">somechanic31@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-800/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Nos <span class="text-blue-400">Services</span></h2>
+                <p class="text-xl text-gray-400">Des prestations complètes pour l'entretien de votre véhicule</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card bg-gray-800 p-8 rounded-2xl border border-gray-700">
+                    <div class="w-16 h-16 bg-blue-600/20 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-tools text-blue-400 text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Mécanique Générale</h3>
+                    <p class="text-gray-400 mb-4">Moteur, freinage, transmission... Tous types de réparations mécaniques
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><i class="fas fa-check text-blue-400 mr-2"></i>Réparation moteur</li>
+                        <li><i class="fas fa-check text-blue-400 mr-2"></i>Système de freinage</li>
+                        <li><i class="fas fa-check text-blue-400 mr-2"></i>Embrayage</li>
+                        <li><i class="fas fa-check text-blue-400 mr-2"></i>Transmission</li>
+                    </ul>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card bg-gray-800 p-8 rounded-2xl border border-gray-700">
+                    <div class="w-16 h-16 bg-blue-600/20 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-oil-can text-blue-400 text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Vidange & Entretien</h3>
+                    <p class="text-gray-400 mb-4">Entretien périodique pour la longévité de votre véhicule</p>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><i class="fas fa-check text-blue-400 mr-2"></i>Vidange moteur</li>
+                        <li><i class="fas fa-check text-blue-400 mr-2"></i>Remplacement filtres</li>
+                        <li><i class="fas fa-check text-blue-400 mr-2"></i>Contrôle niveaux</li>
+                        <li><i class="fas fa-check text-blue-400 mr-2"></i>Révision complète</li>
+                    </ul>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card bg-gray-800 p-8 rounded-2xl border border-gray-700">
+                    <div class="w-16 h-16 bg-blue-600/20 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-laptop-medical text-blue-400 text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Diagnostic</h3>
+                    <p class="text-gray-400 mb-4">Diagnostic électronique précis avec matériel professionnel</p>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><i class="fas fa-check text-blue-400 mr-2"></i>Diagnostic moteur</li>
+                        <li><i class="fas fa-check text-blue-400 mr-2"></i>Lecture codes défaut</li>
+                        <li><i class="fas fa-check text-blue-400 mr-2"></i>Analyse électronique</li>
+                        <li><i class="fas fa-check text-blue-400 mr-2"></i>Conseils réparation</li>
+                    </ul>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card bg-gray-800 p-8 rounded-2xl border border-gray-700">
+                    <div class="w-16 h-16 bg-blue-600/20 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-clipboard-check text-blue-400 text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Contrôle Technique</h3>
+                    <p class="text-gray-400 mb-4">Préparation et vérification avant contrôle technique</p>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><i class="fas fa-check text-blue-400 mr-2"></i>Check complet</li>
+                        <li><i class="fas fa-check text-blue-400 mr-2"></i>Réparations nécessaires</li>
+                        <li><i class="fas fa-check text-blue-400 mr-2"></i>Contre-visite</li>
+                        <li><i class="fas fa-check text-blue-400 mr-2"></i>Conseils & suivi</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tarifs Section -->
+    <section id="tarifs" class="py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Nos <span class="text-blue-400">Tarifs</span></h2>
+                <p class="text-xl text-gray-400">Transparence et qualité à prix compétitifs</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Tarif 1 -->
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700 hover:border-blue-600 transition">
+                    <h3 class="text-2xl font-bold mb-2">Vidange</h3>
+                    <div class="text-4xl font-bold text-blue-400 mb-6">À partir de 69€</div>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><i class="fas fa-check text-blue-400 mr-3"></i>Huile moteur</li>
+                        <li><i class="fas fa-check text-blue-400 mr-3"></i>Filtre à huile</li>
+                        <li><i class="fas fa-check text-blue-400 mr-3"></i>Contrôle des niveaux</li>
+                        <li><i class="fas fa-check text-blue-400 mr-3"></i>Main d'œuvre incluse</li>
+                    </ul>
+                </div>
+
+                <!-- Tarif 2 -->
+                <div
+                    class="bg-gradient-to-br from-blue-600 to-blue-700 p-8 rounded-2xl border-2 border-blue-500 relative overflow-hidden">
+                    <div
+                        class="absolute top-4 right-4 bg-yellow-400 text-gray-900 px-3 py-1 rounded-full text-sm font-bold">
+                        POPULAIRE
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2">Révision Complète</h3>
+                    <div class="text-4xl font-bold mb-6">À partir de 189€</div>
+                    <ul class="space-y-3">
+                        <li><i class="fas fa-check mr-3"></i>Vidange complète</li>
+                        <li><i class="fas fa-check mr-3"></i>Remplacement filtres</li>
+                        <li><i class="fas fa-check mr-3"></i>Contrôle 40 points</li>
+                        <li><i class="fas fa-check mr-3"></i>Diagnostic offert</li>
+                    </ul>
+                </div>
+
+                <!-- Tarif 3 -->
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700 hover:border-blue-600 transition">
+                    <h3 class="text-2xl font-bold mb-2">Diagnostic</h3>
+                    <div class="text-4xl font-bold text-blue-400 mb-6">À partir de 49€</div>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><i class="fas fa-check text-blue-400 mr-3"></i>Diagnostic électronique</li>
+                        <li><i class="fas fa-check text-blue-400 mr-3"></i>Lecture des codes</li>
+                        <li><i class="fas fa-check text-blue-400 mr-3"></i>Rapport détaillé</li>
+                        <li><i class="fas fa-check text-blue-400 mr-3"></i>Conseils personnalisés</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <p class="text-gray-400 mb-6">* Tarifs indicatifs, un devis gratuit sera établi selon votre véhicule</p>
+                <a href="#contact" class="btn-primary text-white px-8 py-4 rounded-lg font-semibold inline-block">
+                    Demander un devis gratuit
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="py-20 bg-gray-800/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Pourquoi <span class="text-blue-400">SO MECHANIC</span>
+                    ?</h2>
+            </div>
+
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-blue-600/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-certificate text-blue-400 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Expertise</h3>
+                    <p class="text-gray-400">Mécaniciens qualifiés et expérimentés</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-blue-600/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-euro-sign text-blue-400 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Prix Transparents</h3>
+                    <p class="text-gray-400">Devis gratuit sans surprise</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-blue-600/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-clock text-blue-400 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Rapidité</h3>
+                    <p class="text-gray-400">Intervention rapide et efficace</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-blue-600/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-handshake text-blue-400 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Confiance</h3>
+                    <p class="text-gray-400">Service client de qualité</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Contactez-<span class="text-blue-400">nous</span></h2>
+                <p class="text-xl text-gray-400">Nous sommes à votre écoute</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Contact Info -->
+                <div class="space-y-8">
+                    <div class="bg-gray-800 p-6 rounded-xl border border-gray-700">
+                        <div class="flex items-start space-x-4">
+                            <div
+                                class="w-12 h-12 bg-blue-600/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-phone text-blue-400 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-2">Téléphone</h3>
+                                <a href="tel:0621977782" class="text-blue-400 hover:text-blue-300 text-lg">06 21 97 77
+                                    82</a>
+                                <p class="text-gray-400 text-sm mt-1">Lundi - Vendredi : 9h30 - 18h30</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-800 p-6 rounded-xl border border-gray-700">
+                        <div class="flex items-start space-x-4">
+                            <div
+                                class="w-12 h-12 bg-blue-600/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-envelope text-blue-400 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-2">Email</h3>
+                                <a href="mailto:somechanic31@gmail.com"
+                                    class="text-blue-400 hover:text-blue-300">somechanic31@gmail.com</a>
+                                <p class="text-gray-400 text-sm mt-1">Réponse sous 24h</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-800 p-6 rounded-xl border border-gray-700">
+                        <div class="flex items-start space-x-4">
+                            <div
+                                class="w-12 h-12 bg-blue-600/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-map-marker-alt text-blue-400 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-2">Adresse</h3>
+                                <p class="text-gray-300">45 bis route d'Aussonne</p>
+                                <p class="text-gray-300">Cornebarrieu</p>
+                                <a href="https://www.google.com/maps" target="_blank"
+                                    class="text-blue-400 hover:text-blue-300 text-sm mt-2 inline-block">
+                                    <i class="fas fa-directions mr-1"></i>Voir sur Google Maps
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-gradient-to-r from-blue-600/20 to-purple-600/20 p-6 rounded-xl border border-blue-600/50">
+                        <h3 class="font-bold text-lg mb-3">Suivez-nous</h3>
+                        <div class="flex space-x-4">
+                            <a href="#"
+                                class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition">
+                                <i class="fab fa-google text-xl"></i>
+                            </a>
+                            <a href="#"
+                                class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition">
+                                <i class="fab fa-snapchat text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700">
+                    <h3 class="text-2xl font-bold mb-6">Demande de rendez-vous</h3>
+                    <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field"
+                        class="space-y-6">
+                        <!-- Champ anti-spam caché -->
+                        <p class="hidden">
+                            <label>Ne pas remplir : <input name="bot-field" /></label>
+                        </p>
+
+                        <div>
+                            <label class="block text-sm font-semibold mb-2">Nom complet</label>
+                            <input type="text" name="nom" required
+                                class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-blue-500 transition"
+                                placeholder="Votre nom">
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-semibold mb-2">Email</label>
+                            <input type="email" name="email" required
+                                class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-blue-500 transition"
+                                placeholder="votre@email.com">
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-semibold mb-2">Téléphone</label>
+                            <input type="tel" name="telephone" required
+                                class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-blue-500 transition"
+                                placeholder="06 12 34 56 78">
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-semibold mb-2">Service souhaité</label>
+                            <select name="service" required
+                                class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-blue-500 transition">
+                                <option value="">Choisissez un service</option>
+                                <option value="mecanique">Mécanique générale</option>
+                                <option value="vidange">Vidange et entretien</option>
+                                <option value="diagnostic">Diagnostic</option>
+                                <option value="controle">Contrôle technique</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-semibold mb-2">Message</label>
+                            <textarea name="message" rows="4" required
+                                class="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-blue-500 transition"
+                                placeholder="Décrivez votre besoin..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-primary w-full text-white px-8 py-4 rounded-lg font-semibold">
+                            <i class="fas fa-paper-plane mr-2"></i>Envoyer ma demande
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 border-t border-gray-800 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-wrench text-white"></i>
+                        </div>
+                        <span class="text-xl font-bold">SO MECHANIC</span>
+                    </div>
+                    <p class="text-gray-400">Votre garage de confiance à Cornebarrieu</p>
+                </div>
+
+                <div>
+                    <h4 class="font-bold mb-4">Liens rapides</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#accueil" class="hover:text-blue-400 transition">Accueil</a></li>
+                        <li><a href="#services" class="hover:text-blue-400 transition">Services</a></li>
+                        <li><a href="#tarifs" class="hover:text-blue-400 transition">Tarifs</a></li>
+                        <li><a href="#contact" class="hover:text-blue-400 transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold mb-4">Horaires</h4>
+                    <p class="text-gray-400">Lundi - Vendredi</p>
+                    <p class="text-white font-semibold">9h30 - 18h30</p>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 SO MECHANIC. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
