@@ -384,7 +384,7 @@
                 <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700">
                     <h3 class="text-2xl font-bold mb-6">Demande de rendez-vous</h3>
                     <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field"
-                        class="space-y-6">
+                        class="space-y-6" action="/success.html" netlify>
                         <!-- Champ anti-spam caché -->
                         <p class="hidden">
                             <label>Ne pas remplir : <input name="bot-field" /></label>
@@ -465,13 +465,18 @@
 
                 <div>
                     <h4 class="font-bold mb-4">Horaires</h4>
-                    <p class="text-gray-400">Lundi - Vendredi</p>
-                    <p class="text-white font-semibold">9h30 - 18h30</p>
+                    <ul class="space-y-1 text-gray-400 text-sm">
+                        <li>Lundi - Jeudi : 9h30 - 18h30</li>
+                        <li>Vendredi : 9h30 - 13h30 / 14h30 - 18h30</li>
+                        <li>Samedi : 9h30 - 18h30</li>
+                        <li class="text-red-400">Dimanche : Fermé</li>
+                    </ul>
                 </div>
             </div>
 
             <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-                <p>&copy; 2024 SO MECHANIC. Tous droits réservés.</p>
+                <p>&copy; 2025 SO MECHANIC. Tous droits réservés.
+                <p>&copy; Erlan LAUP</p>
             </div>
         </div>
     </footer>
