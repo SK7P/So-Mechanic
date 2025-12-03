@@ -10,7 +10,7 @@ Disallow: /*.json$
 Disallow: /api/
 
 # Sitemap
-Sitemap: https://somechanic.netlify.app/sitemap.xml
+Sitemap: https://so-mechanic.netlify.app/sitemap.xml
 
 # Crawl-delay pour être poli avec les serveurs
 Crawl-delay: 1
