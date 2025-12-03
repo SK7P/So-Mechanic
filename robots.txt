@@ -1,0 +1,16 @@
+# robots.txt pour SO MECHANIC
+
+# Autoriser tous les robots d'exploration
+User-agent: *
+Allow: /
+
+# Bloquer l'accès aux fichiers système (si présents)
+Disallow: /admin/
+Disallow: /*.json$
+Disallow: /api/
+
+# Sitemap
+Sitemap: https://somechanic.netlify.app/sitemap.xml
+
+# Crawl-delay pour être poli avec les serveurs
+Crawl-delay: 1

@@ -3,18 +3,66 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Message envoyé - SO MECHANIC</title>
+    <meta name="description"
+        content="Votre demande de rendez-vous a bien été envoyée à SO MECHANIC. Nous vous recontacterons rapidement.">
+    <meta name="robots" content="noindex, follow">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
 </head>
 
-<body class="bg-gray-900 text-white flex items-center justify-center min-h-screen">
-    <div class="text-center">
-        <div class="text-6xl mb-6">✅</div>
-        <h1 class="text-4xl font-bold mb-4">Message envoyé !</h1>
-        <p class="text-xl text-gray-400 mb-8">Nous vous recontacterons rapidement.</p>
-        <a href="/" class="bg-blue-600 px-8 py-4 rounded-lg font-semibold inline-block hover:bg-blue-700">
-            Retour à l'accueil
-        </a>
+<body class="bg-gray-900 text-white">
+    <div class="min-h-screen flex items-center justify-center px-4">
+        <div class="text-center max-w-2xl">
+            <!-- Icône de succès animée -->
+            <div class="mb-8 inline-block">
+                <div class="w-24 h-24 bg-green-500/20 rounded-full flex items-center justify-center mx-auto">
+                    <i class="fas fa-check text-green-400 text-5xl"></i>
+                </div>
+            </div>
+
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Message envoyé !</h1>
+            <p class="text-xl text-gray-400 mb-8">
+                Votre demande de rendez-vous a bien été reçue.<br>
+                Nous vous recontacterons dans les plus brefs délais.
+            </p>
+
+            <!-- Informations de contact -->
+            <div class="bg-gray-800 p-6 rounded-2xl border border-gray-700 mb-8 inline-block">
+                <p class="text-gray-400 mb-4">Besoin d'une réponse immédiate ?</p>
+                <a href="tel:0621977782"
+                    class="inline-flex items-center space-x-2 text-blue-400 hover:text-blue-300 text-lg font-semibold">
+                    <i class="fas fa-phone"></i>
+                    <span>06 21 97 77 82</span>
+                </a>
+            </div>
+
+            <!-- Boutons d'action -->
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="/"
+                    class="bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-lg font-semibold inline-block transition">
+                    <i class="fas fa-home mr-2"></i>Retour à l'accueil
+                </a>
+                <a href="/#services"
+                    class="bg-gray-800 hover:bg-gray-700 px-8 py-4 rounded-lg font-semibold inline-block transition">
+                    <i class="fas fa-tools mr-2"></i>Nos services
+                </a>
+            </div>
+
+            <!-- Horaires rappel -->
+            <div class="mt-12 text-gray-500 text-sm">
+                <p>Horaires d'ouverture :</p>
+                <p>Lun-Sam : 9h30 - 18h30 (Ven : pause 13h30-14h30)</p>
+            </div>
+        </div>
     </div>
 </body>
 
