@@ -16,12 +16,24 @@
     <meta name="google-site-verification" content="PqwJOw-NMk-9mYJcYwCNxcRxBwXRE0rIJ4LBBAgRTow" />
     <link rel="canonical" href="https://somechanic.netlify.app/">
 
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="16x16" href="/public/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/public/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/public/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/public/favicon-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/public/favicon-512x512.png">
+    <link rel="shortcut icon" href="/public/favicon.ico">
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://somechanic.netlify.app/">
     <meta property="og:title" content="SO MECHANIC - Garage Automobile à Cornebarrieu">
     <meta property="og:description"
         content="Votre garage de confiance à Cornebarrieu. Mécanique générale, vidange, diagnostic et contrôle technique. Prix transparents et service rapide.">
+    <meta property="og:image" content="https://somechanic.netlify.app/public/logo-complete.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="SO MECHANIC - Garage automobile Cornebarrieu">
     <meta property="og:locale" content="fr_FR">
 
     <!-- Twitter -->
@@ -29,6 +41,7 @@
     <meta name="twitter:title" content="SO MECHANIC - Garage Automobile à Cornebarrieu">
     <meta name="twitter:description"
         content="Votre garage de confiance à Cornebarrieu. Mécanique générale, vidange, diagnostic et contrôle technique.">
+    <meta name="twitter:image" content="https://somechanic.netlify.app/public/logo-complete.png">
 
     <!-- Local Business Schema -->
     <script type="application/ld+json">
@@ -36,7 +49,7 @@
       "@context": "https://schema.org",
       "@type": "AutoRepair",
       "name": "SO MECHANIC",
-      "image": "https://somechanic.netlify.app/logo.png",
+      "image": "https://somechanic.netlify.app/public/logo-complete.png",
       "description": "Garage automobile à Cornebarrieu spécialisé en mécanique générale, vidange, diagnostic et contrôle technique",
       "address": {
         "@type": "PostalAddress",
@@ -132,11 +145,9 @@
     <nav class="fixed w-full bg-gray-900/95 backdrop-blur-sm z-50 border-b border-gray-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
-                <div class="flex items-center space-x-3">
-                    <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center">
-                        <i class="fas fa-wrench text-white text-xl"></i>
-                    </div>
-                    <span class="text-2xl font-bold text-white">SO MECHANIC</span>
+                <div class="flex items-center">
+                    <img src="/public/logo-navbar.png" alt="SO MECHANIC - Garage automobile Cornebarrieu"
+                        class="h-12 w-auto">
                 </div>
                 <div class="hidden md:flex space-x-8">
                     <a href="#accueil" class="text-gray-300 hover:text-blue-400 transition">Accueil</a>
@@ -179,33 +190,129 @@
                     </div>
                 </div>
                 <div class="relative">
-                    <div
-                        class="bg-gradient-to-br from-blue-600/20 to-purple-600/20 rounded-3xl p-8 backdrop-blur-sm border border-gray-700">
-                        <div class="space-y-6">
-                            <div class="flex items-center space-x-4 bg-gray-800/50 p-4 rounded-xl">
-                                <i class="fas fa-clock text-blue-400 text-2xl"></i>
-                                <div>
-                                    <p class="text-sm text-gray-400">Horaires</p>
-                                    <p class="font-semibold">Lun-Sam : 9h30 - 18h30</p>
-                                    <p class="text-xs text-gray-500">Ven : pause 13h30-14h30</p>
-                                </div>
-                            </div>
-                            <div class="flex items-center space-x-4 bg-gray-800/50 p-4 rounded-xl">
-                                <i class="fas fa-map-marker-alt text-blue-400 text-2xl"></i>
-                                <div>
-                                    <p class="text-sm text-gray-400">Adresse</p>
-                                    <p class="font-semibold">45 bis route d'Aussonne</p>
-                                    <p class="text-sm text-gray-400">Cornebarrieu</p>
-                                </div>
-                            </div>
-                            <div class="flex items-center space-x-4 bg-gray-800/50 p-4 rounded-xl">
-                                <i class="fas fa-envelope text-blue-400 text-2xl"></i>
-                                <div>
-                                    <p class="text-sm text-gray-400">Email</p>
-                                    <p class="font-semibold">somechanic31@gmail.com</p>
-                                </div>
+                    <!-- Image principale -->
+                    <div class="rounded-3xl overflow-hidden border-4 border-blue-600/30 shadow-2xl mb-6">
+                        <img src="https://images.unsplash.com/photo-1517524206127-48bbd363f3d7?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Mécanicien professionnel serrant la main d'un client satisfait dans le garage SO MECHANIC à Cornebarrieu"
+                            class="w-full h-80 object-cover" loading="lazy">
+                    </div>
+
+                    <!-- Info cards overlay -->
+                    <div class="grid grid-cols-1 gap-4">
+                        <div
+                            class="flex items-center space-x-4 bg-gray-800/95 backdrop-blur-sm p-4 rounded-xl border border-gray-700">
+                            <i class="fas fa-clock text-blue-400 text-2xl"></i>
+                            <div>
+                                <p class="text-sm text-gray-400">Horaires</p>
+                                <p class="font-semibold">Lun-Sam : 9h30 - 18h30</p>
+                                <p class="text-xs text-gray-500">Ven : pause 13h30-14h30</p>
                             </div>
                         </div>
+                        <div
+                            class="flex items-center space-x-4 bg-gray-800/95 backdrop-blur-sm p-4 rounded-xl border border-gray-700">
+                            <i class="fas fa-map-marker-alt text-blue-400 text-2xl"></i>
+                            <div>
+                                <p class="text-sm text-gray-400">Adresse</p>
+                                <p class="font-semibold">45 bis route d'Aussonne</p>
+                                <p class="text-sm text-gray-400">Cornebarrieu</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-20 bg-gray-800/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <!-- Photo équipe -->
+                <div class="order-2 md:order-1">
+                    <div class="relative">
+                        <div class="rounded-2xl overflow-hidden border-2 border-blue-600/30 shadow-2xl">
+                            <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=700&h=500&fit=crop"
+                                alt="L'équipe SO MECHANIC à Cornebarrieu" class="w-full h-96 object-cover"
+                                loading="lazy">
+                        </div>
+                        <!-- Badge overlay -->
+                        <div
+                            class="absolute -bottom-6 -right-6 bg-blue-600 p-6 rounded-2xl shadow-xl border-4 border-gray-900">
+                            <div class="text-center">
+                                <div class="flex text-yellow-400 text-sm mb-1 justify-center">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="text-2xl font-bold">5/5</div>
+                                <div class="text-xs text-blue-100">22 avis Google</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contenu -->
+                <div class="order-1 md:order-2">
+                    <div
+                        class="inline-block bg-blue-600/20 text-blue-400 px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                        <i class="fas fa-users mr-2"></i>Qui sommes-nous ?
+                    </div>
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                        Votre partenaire <span class="text-blue-400">automobile</span> à Cornebarrieu
+                    </h2>
+                    <div class="space-y-4 text-gray-300 leading-relaxed">
+                        <p>
+                            <strong class="text-white">SO MECHANIC</strong> est votre garage de confiance situé au cœur
+                            de Cornebarrieu.
+                            Notre équipe de mécaniciens passionnés et qualifiés met son expertise au service de votre
+                            véhicule.
+                        </p>
+                        <p>
+                            Que ce soit pour un simple entretien, une réparation complexe ou un diagnostic approfondi,
+                            nous nous engageons à vous offrir un service de qualité, transparent et à prix compétitif.
+                        </p>
+                        <p>
+                            <strong class="text-white">Notre philosophie :</strong> honnêteté, réactivité et
+                            professionnalisme.
+                            Chaque intervention est réalisée avec soin, comme si c'était notre propre véhicule.
+                        </p>
+                    </div>
+
+                    <!-- Points forts -->
+                    <div class="grid grid-cols-2 gap-4 mt-8">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-blue-600/20 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-certificate text-blue-400"></i>
+                            </div>
+                            <span class="font-semibold">Experts qualifiés</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-blue-600/20 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-tools text-blue-400"></i>
+                            </div>
+                            <span class="font-semibold">Équipement pro</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-blue-600/20 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-bolt text-blue-400"></i>
+                            </div>
+                            <span class="font-semibold">Service rapide</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-blue-600/20 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-handshake text-blue-400"></i>
+                            </div>
+                            <span class="font-semibold">Prix transparents</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-8">
+                        <a href="#contact"
+                            class="btn-primary text-white px-8 py-4 rounded-lg font-semibold inline-block">
+                            <i class="fas fa-calendar-check mr-2"></i>Prendre rendez-vous
+                        </a>
                     </div>
                 </div>
             </div>
@@ -222,64 +329,98 @@
 
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <!-- Service 1 -->
-                <div class="service-card bg-gray-800 p-8 rounded-2xl border border-gray-700">
-                    <div class="w-16 h-16 bg-blue-600/20 rounded-xl flex items-center justify-center mb-6">
-                        <i class="fas fa-tools text-blue-400 text-3xl"></i>
+                <div class="service-card bg-gray-800 rounded-2xl border border-gray-700 overflow-hidden">
+                    <div class="relative h-48">
+                        <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=400&h=300&fit=crop"
+                            alt="Mécanique générale" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
+                        <div
+                            class="absolute bottom-4 left-4 w-12 h-12 bg-blue-600/90 backdrop-blur-sm rounded-xl flex items-center justify-center">
+                            <i class="fas fa-tools text-white text-xl"></i>
+                        </div>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4">Mécanique Générale</h3>
-                    <p class="text-gray-400 mb-4">Moteur, freinage, transmission... Tous types de réparations mécaniques
-                    </p>
-                    <ul class="space-y-2 text-sm text-gray-400">
-                        <li><i class="fas fa-check text-blue-400 mr-2"></i>Réparation moteur</li>
-                        <li><i class="fas fa-check text-blue-400 mr-2"></i>Système de freinage</li>
-                        <li><i class="fas fa-check text-blue-400 mr-2"></i>Embrayage</li>
-                        <li><i class="fas fa-check text-blue-400 mr-2"></i>Transmission</li>
-                    </ul>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">Mécanique Générale</h3>
+                        <p class="text-gray-400 text-sm mb-4">Moteur, freinage, transmission... Tous types de
+                            réparations mécaniques</p>
+                        <ul class="space-y-2 text-sm text-gray-400">
+                            <li><i class="fas fa-check text-blue-400 mr-2"></i>Réparation moteur</li>
+                            <li><i class="fas fa-check text-blue-400 mr-2"></i>Système de freinage</li>
+                            <li><i class="fas fa-check text-blue-400 mr-2"></i>Embrayage</li>
+                            <li><i class="fas fa-check text-blue-400 mr-2"></i>Transmission</li>
+                        </ul>
+                    </div>
                 </div>
 
                 <!-- Service 2 -->
-                <div class="service-card bg-gray-800 p-8 rounded-2xl border border-gray-700">
-                    <div class="w-16 h-16 bg-blue-600/20 rounded-xl flex items-center justify-center mb-6">
-                        <i class="fas fa-oil-can text-blue-400 text-3xl"></i>
+                <div class="service-card bg-gray-800 rounded-2xl border border-gray-700 overflow-hidden">
+                    <div class="relative h-48">
+                        <img src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?w=400&h=300&fit=crop"
+                            alt="Vidange et entretien" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
+                        <div
+                            class="absolute bottom-4 left-4 w-12 h-12 bg-blue-600/90 backdrop-blur-sm rounded-xl flex items-center justify-center">
+                            <i class="fas fa-oil-can text-white text-xl"></i>
+                        </div>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4">Vidange & Entretien</h3>
-                    <p class="text-gray-400 mb-4">Entretien périodique pour la longévité de votre véhicule</p>
-                    <ul class="space-y-2 text-sm text-gray-400">
-                        <li><i class="fas fa-check text-blue-400 mr-2"></i>Vidange moteur</li>
-                        <li><i class="fas fa-check text-blue-400 mr-2"></i>Remplacement filtres</li>
-                        <li><i class="fas fa-check text-blue-400 mr-2"></i>Contrôle niveaux</li>
-                        <li><i class="fas fa-check text-blue-400 mr-2"></i>Révision complète</li>
-                    </ul>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">Vidange & Entretien</h3>
+                        <p class="text-gray-400 text-sm mb-4">Entretien périodique pour la longévité de votre véhicule
+                        </p>
+                        <ul class="space-y-2 text-sm text-gray-400">
+                            <li><i class="fas fa-check text-blue-400 mr-2"></i>Vidange moteur</li>
+                            <li><i class="fas fa-check text-blue-400 mr-2"></i>Remplacement filtres</li>
+                            <li><i class="fas fa-check text-blue-400 mr-2"></i>Contrôle niveaux</li>
+                            <li><i class="fas fa-check text-blue-400 mr-2"></i>Révision complète</li>
+                        </ul>
+                    </div>
                 </div>
 
                 <!-- Service 3 -->
-                <div class="service-card bg-gray-800 p-8 rounded-2xl border border-gray-700">
-                    <div class="w-16 h-16 bg-blue-600/20 rounded-xl flex items-center justify-center mb-6">
-                        <i class="fas fa-laptop-medical text-blue-400 text-3xl"></i>
+                <div class="service-card bg-gray-800 rounded-2xl border border-gray-700 overflow-hidden">
+                    <div class="relative h-48">
+                        <img src="https://images.unsplash.com/photo-1580274455191-1c62238fa333?w=400&h=300&fit=crop"
+                            alt="Diagnostic électronique" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
+                        <div
+                            class="absolute bottom-4 left-4 w-12 h-12 bg-blue-600/90 backdrop-blur-sm rounded-xl flex items-center justify-center">
+                            <i class="fas fa-laptop-medical text-white text-xl"></i>
+                        </div>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4">Diagnostic</h3>
-                    <p class="text-gray-400 mb-4">Diagnostic électronique précis avec matériel professionnel</p>
-                    <ul class="space-y-2 text-sm text-gray-400">
-                        <li><i class="fas fa-check text-blue-400 mr-2"></i>Diagnostic moteur</li>
-                        <li><i class="fas fa-check text-blue-400 mr-2"></i>Lecture codes défaut</li>
-                        <li><i class="fas fa-check text-blue-400 mr-2"></i>Analyse électronique</li>
-                        <li><i class="fas fa-check text-blue-400 mr-2"></i>Conseils réparation</li>
-                    </ul>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">Diagnostic</h3>
+                        <p class="text-gray-400 text-sm mb-4">Diagnostic électronique précis avec matériel professionnel
+                        </p>
+                        <ul class="space-y-2 text-sm text-gray-400">
+                            <li><i class="fas fa-check text-blue-400 mr-2"></i>Diagnostic moteur</li>
+                            <li><i class="fas fa-check text-blue-400 mr-2"></i>Lecture codes défaut</li>
+                            <li><i class="fas fa-check text-blue-400 mr-2"></i>Analyse électronique</li>
+                            <li><i class="fas fa-check text-blue-400 mr-2"></i>Conseils réparation</li>
+                        </ul>
+                    </div>
                 </div>
 
                 <!-- Service 4 -->
-                <div class="service-card bg-gray-800 p-8 rounded-2xl border border-gray-700">
-                    <div class="w-16 h-16 bg-blue-600/20 rounded-xl flex items-center justify-center mb-6">
-                        <i class="fas fa-clipboard-check text-blue-400 text-3xl"></i>
+                <div class="service-card bg-gray-800 rounded-2xl border border-gray-700 overflow-hidden">
+                    <div class="relative h-48">
+                        <img src="https://images.unsplash.com/photo-1625047509168-a7026f36de04?w=400&h=300&fit=crop"
+                            alt="Contrôle technique" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
+                        <div
+                            class="absolute bottom-4 left-4 w-12 h-12 bg-blue-600/90 backdrop-blur-sm rounded-xl flex items-center justify-center">
+                            <i class="fas fa-clipboard-check text-white text-xl"></i>
+                        </div>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4">Contrôle Technique</h3>
-                    <p class="text-gray-400 mb-4">Préparation et vérification avant contrôle technique</p>
-                    <ul class="space-y-2 text-sm text-gray-400">
-                        <li><i class="fas fa-check text-blue-400 mr-2"></i>Check complet</li>
-                        <li><i class="fas fa-check text-blue-400 mr-2"></i>Réparations nécessaires</li>
-                        <li><i class="fas fa-check text-blue-400 mr-2"></i>Contre-visite</li>
-                        <li><i class="fas fa-check text-blue-400 mr-2"></i>Conseils & suivi</li>
-                    </ul>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">Contrôle Technique</h3>
+                        <p class="text-gray-400 text-sm mb-4">Préparation et vérification avant contrôle technique</p>
+                        <ul class="space-y-2 text-sm text-gray-400">
+                            <li><i class="fas fa-check text-blue-400 mr-2"></i>Check complet</li>
+                            <li><i class="fas fa-check text-blue-400 mr-2"></i>Réparations nécessaires</li>
+                            <li><i class="fas fa-check text-blue-400 mr-2"></i>Contre-visite</li>
+                            <li><i class="fas fa-check text-blue-400 mr-2"></i>Conseils & suivi</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -691,7 +832,7 @@
                                 <h3 class="font-bold text-lg mb-2">Adresse</h3>
                                 <p class="text-gray-300">45 bis route d'Aussonne</p>
                                 <p class="text-gray-300">Cornebarrieu</p>
-                                <a href="https://www.google.com/maps" target="_blank"
+                                <a href="https://maps.app.goo.gl/vnmZb7349PLu1bJN9" target="_blank"
                                     class="text-blue-400 hover:text-blue-300 text-sm mt-2 inline-block">
                                     <i class="fas fa-directions mr-1"></i>Voir sur Google Maps
                                 </a>
@@ -779,11 +920,8 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-3 gap-8">
                 <div>
-                    <div class="flex items-center space-x-3 mb-4">
-                        <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
-                            <i class="fas fa-wrench text-white"></i>
-                        </div>
-                        <span class="text-xl font-bold">SO MECHANIC</span>
+                    <div class="mb-4">
+                        <img src="/public/logo-footer.png" alt="SO MECHANIC" class="h-10 w-auto">
                     </div>
                     <p class="text-gray-400">Votre garage de confiance à Cornebarrieu</p>
                 </div>
